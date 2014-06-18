@@ -70,3 +70,6 @@ input.ds-authority-lock.is-unlocked
 .jumbotron {display:none;}
 .breadcrumb {display:none;}
 
+/* removing rss feed subscription icons */
+#recent-submissions-carousel img {display:none;}
+form img {display: none;}
