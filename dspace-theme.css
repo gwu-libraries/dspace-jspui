@@ -66,4 +66,6 @@ input.ds-authority-lock.is-unlocked
 .label-required:after { content:" *"; }
 
 /* BEGIN GW LIBRARIES CUSTOMIZATIONS */
+.banner {display:none;}
 .jumbotron {display:none;}
+
