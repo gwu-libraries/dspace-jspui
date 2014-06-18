@@ -66,6 +66,7 @@ input.ds-authority-lock.is-unlocked
 .label-required:after { content:" *"; }
 
 /* BEGIN GW LIBRARIES CUSTOMIZATIONS */
+/* removing above-the-fold blocks */
 .banner {display:none;}
 .jumbotron {display:none;}
 .breadcrumb {display:none;}
@@ -73,3 +74,6 @@ input.ds-authority-lock.is-unlocked
 /* removing rss feed subscription icons */
 #recent-submissions-carousel img {display:none;}
 form img {display: none;}
+
+/* general no show class */
+.noshow {display:none;}
