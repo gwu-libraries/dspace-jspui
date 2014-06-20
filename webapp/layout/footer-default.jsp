@@ -37,18 +37,13 @@
 %>
 </div>
 </main>
-            <%-- Page footer --%>
-             <footer class="navbar navbar-inverse navbar-bottom">
-             <div id="designedby" class="container text-muted">
-             <fmt:message key="jsp.layout.footer-default.theme-by"/> <a href="http://www.cineca.it"><img
-                                    src="<%= request.getContextPath() %>/image/logo-cineca-small.png"
-                                    alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
-                                <p class="text-muted"><fmt:message key="jsp.layout.footer-default.text"/>&nbsp;-
-                                <a target="_blank" href="<%= request.getContextPath() %>/feedback"><fmt:message key="jsp.layout.footer-default.feedback"/></a>
-                                <a href="<%= request.getContextPath() %>/htmlmap"></a></p>
-                                </div>
-			</div>
-    </footer>
+	<%-- Page footer --%>
+        <footer class="navbar-fixed-bottom"><!-- the Libsite7 Lite Footer -->
+            <div id="libfooter-container">
+                <div id="libfooter" class="container">
+                    <div class="libfooter-text"><span class="address"><a href="http://library.gwu.edu" target="_blank" title="GW Libraries Website">GW Libraries</a> &#8226; 2130 H Street NW &#8226; Washington DC 20052</span> &#8226; <span class="tel">202.994.6558</span> &#8226; <a href="mailto:gelman@gwu.edu" target="_blank" title="">gelman@gwu.edu</a></div>
+                </div>
+            </div>
+        </footer><!-- end Libsite7 Lite Footer -->
     </body>
 </html>
