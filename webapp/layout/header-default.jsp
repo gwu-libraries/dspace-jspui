@@ -135,7 +135,7 @@
                     <div class="libheader-link"><a href="/jspui/" target="" title="">home</a></div>
                     <!-- this is an optional 'bullet' to place between links -->
                     <div class="bullet">&bull;</div>
-                    <div class="libheader-link"><a href="#" target="_blank" title="">feedback</a></div>
+                    <div class="libheader-link"><a href="/jspui/feedback" target="_blank" title="">feedback</a></div>
                     <!-- end optional links -->
 
                     <!-- optional bootstrap user icons, example placement -->
