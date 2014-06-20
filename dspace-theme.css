@@ -77,3 +77,6 @@ form img {display: none;}
 
 /* general no show class */
 .noshow {display:none;}
+
+/* overriding own bootswatch to fix header height */
+#libheader-container {height: inherit;}

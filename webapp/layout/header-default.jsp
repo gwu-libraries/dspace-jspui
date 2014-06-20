@@ -45,7 +45,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><%= siteName %>: <%= title %></title>
+        <title>TEST: <%= siteName %>: <%= title %></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="Generator" content="<%= generator %>" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,6 +53,8 @@
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/jquery-ui-1.10.3.custom/redmond/jquery-ui-1.10.3.custom.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap.min.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/bootstrap-theme.min.css" type="text/css" />
+            <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/libheader7_lite.css" type="text/css" />
+            <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/libheader7_lite_bootswatch.css" type="text/css" />
 	    <link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/bootstrap/dspace-theme.css" type="text/css" />
 <%
     if (!"NONE".equals(feedRef))
@@ -123,27 +125,24 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
-    <%
-    if (!navbar.equals("off"))
-    {
-%>
-            <div class="container">
-                <dspace:include page="<%= navbar %>" />
-            </div>
-<%
-    }
-    else
-    {
-    	%>
-        <div class="container">
-            <dspace:include page="/layout/navbar-minimal.jsp" />
-        </div>
-<%    	
-    }
-%>
-</header>
+        <header class="navbar-fixed-top"><!-- this is the Libsite7 Lite Header -->
+            <div id="libheader-container">
+                <div id="libheader" class="container">
+                    <div class="libheader-logo hide-lo"><a href="http://www.gwu.edu" target="_blank" title="GWU website"><img src="https://wikis.library.gwu.edu/img/gwheaderlogo.png" alt="logo: The George Washington University" /></a></div>
+                    <div class="libheader-liblink"><a href="http://library.gwu.edu" target="_blank" title="GW Libraries website">GW Libraries</a></div>
 
+                    <!-- optional links can go here (note: use short text, test it does not bump into the GW logo) -->
+                    <div class="libheader-link"><a href="/jspui/" target="" title="">home</a></div>
+                    <!-- this is an optional 'bullet' to place between links -->
+                    <div class="bullet">&bull;</div>
+                    <div class="libheader-link"><a href="#" target="_blank" title="">feedback</a></div>
+                    <!-- end optional links -->
+
+                    <!-- optional bootstrap user icons, example placement -->
+                    <!-- end optional bootstrap user icons -->
+                </div>
+            </div>
+        </header><!-- end Libsite7 Lite Header -->
 <main id="content" role="main">
 <div class="container banner">
 	<div class="row">
