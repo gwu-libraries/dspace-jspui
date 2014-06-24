@@ -80,3 +80,6 @@ form img {display: none;}
 
 /* overriding own bootswatch to fix header height */
 #libheader-container {height: inherit;}
+
+/* fixing issue with Browse buttons e.g. /jspui/handle/38989/25 */
+.btn-default {text-shadow: none;}
