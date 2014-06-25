@@ -91,7 +91,7 @@ input[type=submit], button {
 	height: 2em; 
 	padding: 0 0 .3em;
     background-color: #005581; 
-	background-image: url(../img/bg-local-nav-bottom.png);
+	background-image: url(http://gwdroid.wrlc.org/~aldridge/libheader/img/bg-local-nav-bottom.png);
 	background-position: bottom;
 	background-repeat: repeat-x;
 }
