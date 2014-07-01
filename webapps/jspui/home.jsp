@@ -224,9 +224,10 @@ if (communities != null && communities.length != 0)
 <%
 }
 %>
+	<%-- changed facet cols to 6 after removing Date Uploaded col (via display:none for now) (christian 7-1-2014) --%>
 	<%
     	int discovery_panel_cols = 8;
-    	int discovery_facet_cols = 4;
+    	int discovery_facet_cols = 6;
     %>
 	<%@ include file="discovery/static-sidebar-facet.jsp" %>
 </div>
