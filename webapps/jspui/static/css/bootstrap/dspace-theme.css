@@ -93,3 +93,5 @@ form img {display: none;}
 @media screen and (max-width:767px) {
   #libheader-container form {display:none;}
 }
+
+.hide-admin-header {display:none;}

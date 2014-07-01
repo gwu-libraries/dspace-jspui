@@ -125,6 +125,98 @@
     <%-- HACK: marginwidth, marginheight: for non-CSS compliant Netscape browser --%>
     <body class="undernavigation">
 <a class="sr-only" href="#content">Skip navigation</a>
+
+<%-- imports added to test admin auth condition below --%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %>
+<%@ page import="javax.servlet.jsp.jstl.fmt.LocaleSupport" %>
+<%@ page import="org.dspace.app.webui.util.UIUtil" %>
+<%@ page import="org.dspace.content.Collection" %>
+<%@ page import="org.dspace.content.Community" %>
+<%@ page import="org.dspace.eperson.EPerson" %>
+<%@ page import="org.dspace.core.ConfigurationManager" %>
+<%@ page import="org.dspace.browse.BrowseIndex" %>
+<%@ page import="org.dspace.browse.BrowseInfo" %>
+<%@ page import="java.util.Map" %>
+
+<%
+    // Is anyone logged in?
+    EPerson user = (EPerson) request.getAttribute("dspace.current.user");
+
+    // Is the logged in user an admin
+    Boolean admin = (Boolean)request.getAttribute("is.admin");
+    // Boolean admin = true;
+    boolean isAdmin = (admin == null ? false : admin.booleanValue());
+    //Boolean test = true;
+    //boolean isTest = (test == null ? false : test.booleanValue());
+
+    // Get the current page, minus query string
+    String currentPage = UIUtil.getOriginalURL(request);
+    int c = currentPage.indexOf( '?' );
+    if( c > -1 )
+    {
+        currentPage = currentPage.substring( 0, c );
+    }
+
+    // E-mail may have to be truncated
+    String navbarEmail = null;
+
+    if (user != null)
+    {
+        navbarEmail = user.getEmail();
+    }
+
+    // get the browse indices
+
+        BrowseIndex[] bis = BrowseIndex.getBrowseIndices();
+    BrowseInfo binfo = (BrowseInfo) request.getAttribute("browse.info");
+    String browseCurrent = "";
+    if (binfo != null)
+    {
+        BrowseIndex bix = binfo.getBrowseIndex();
+        // Only highlight the current browse, only if it is a metadata index,
+        // or the selected sort option is the default for the index
+        if (bix.isMetadataIndex() || bix.getSortOption() == binfo.getSortOption())
+        {
+            if (bix.getName() != null)
+                        browseCurrent = bix.getName();
+        }
+    }
+
+if (isAdmin)
+{
+%>
+<header class="navbar navbar-inverse navbar-fixed-top">
+<%
+}
+else
+{
+%>
+<header class="hide-admin-header navbar navbar-inverse navbar-fixed-top">
+<%
+}
+%>
+    <%
+    if (!navbar.equals("off"))
+    {
+%>
+            <div class="container">
+                <dspace:include page="<%= navbar %>" />
+            </div>
+<%
+    }
+    else
+    {
+        %>
+        <div class="container">
+            <dspace:include page="/layout/navbar-minimal.jsp" />
+        </div>
+<%
+    }
+%>
+</header>
+
+
         <header class="navbar-fixed-top"><!-- this is the Libsite7 Lite Header -->
             <div id="libheader-container">
                 <div id="libheader" class="container">
@@ -140,9 +232,18 @@
 
                     <!-- optional bootstrap user icons, example placement -->
                     <!-- end optional bootstrap user icons -->
+
+        <%-- Search Box --%>
+        <form method="get" action="<%= request.getContextPath() %>/simple-search" class="navbar-form navbar-right" scope="search">
+            <div class="form-group">
+          <input type="text" class="form-control" placeholder="<fmt:message key="jsp.layout.navbar-default.search"/>" name="query" id="tequery" size="25"/>
+        </div>
+        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+
                 </div>
             </div>
         </header><!-- end Libsite7 Lite Header -->
+
 <main id="content" role="main">
 <div class="container banner">
 	<div class="row">
