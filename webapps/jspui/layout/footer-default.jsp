@@ -41,7 +41,7 @@
         <footer class="navbar-fixed-bottom"><!-- the Libsite7 Lite Footer -->
             <div id="libfooter-container">
                 <div id="libfooter" class="container">
-                    <div class="libfooter-text"><span class="address"><a href="http://library.gwu.edu" target="_blank" title="GW Libraries Website">GW Libraries</a> &#8226; 2130 H Street NW &#8226; Washington DC 20052</span> &#8226; <span class="tel">202.994.6558</span> &#8226; <a href="mailto:gelman@gwu.edu" target="_blank" title="">gelman@gwu.edu</a><div style="float:right;"><a href="/jspui/profile">staff login</a></div></div>
+                    <div class="libfooter-text"><span class="address"><a href="http://library.gwu.edu" target="_blank" title="GW Libraries Website">GW Libraries</a> &#8226; 2130 H Street NW &#8226; Washington DC 20052</span> &#8226; <span class="tel">202.994.7549</span> &#8226; <a href="mailto:speccoll@gwu.edu" target="_blank" title="">speccoll@gwu.edu</a><div style="float:right;"><a href="/jspui/profile">staff login</a></div></div>
                 </div>
             </div>
         </footer><!-- end Libsite7 Lite Footer -->
