@@ -75,6 +75,15 @@ input.ds-authority-lock.is-unlocked
 #recent-submissions-carousel img {display:none;}
 form img {display: none;}
 
+/* removing "subscribe to collection" block */
+form.well {display:none;}
+
+/* modifying item page */
+.metadataFieldLabel {font-size:14px;}
+
+/* removing "please use this identifier" block */
+.container .well {display:none;}
+
 /* general no show class */
 .noshow {display:none;}
 
@@ -94,4 +103,13 @@ form img {display: none;}
   #libheader-container form {display:none;}
 }
 
-.hide-admin-header {display:none;}
+/* hide Date Uploaded */
+#facet_dateIssued {display:none;} 
+
+/* hide Recent Submissions and sidebar text on Community pages */
+
+.hide-admin-headerXX {display:none;}
+
+/* mods to existing header */
+.navbar-brand {display:none;}
+.navbar-nav {margin-left:-22px;}
