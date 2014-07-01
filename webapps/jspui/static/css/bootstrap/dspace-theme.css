@@ -83,3 +83,13 @@ form img {display: none;}
 
 /* fixing issue with Browse buttons e.g. /jspui/handle/38989/25 */
 .btn-default {text-shadow: none;}
+
+/* header search box */
+#libheader-container button.btn.btn-primary {height:24px; margin-top:0; font-size:11px; padding:3px 6px;}
+#libheader-container form {margin-top:4px;}
+#libheader-container .form-group {}
+#libheader-container .form-control {font-size:12px; height:24px;}
+
+@media screen and (max-width:767px) {
+  #libheader-container form {display:none;}
+}
