@@ -113,6 +113,10 @@ form.well {display:none;}
 /* replace recent submissions block with image */
 /*#recent-submissions-carousel {display:none;}
 div.panel.panel-primary {height:180px; background-color:#428bca;}*/
+.branding-image-container {background-color:#428bca;}
+.branding-image {padding:1em;}
+.branding-image h2 {margin-top:0; padding-top:0;}
+.branding-image p, h2 {color:#fff; letter-spacing:inherit;}
 
 /* mods to existing header */
 .navbar-brand {display:none;}
