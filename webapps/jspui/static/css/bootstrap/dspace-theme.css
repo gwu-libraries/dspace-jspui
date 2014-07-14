@@ -66,6 +66,13 @@ input.ds-authority-lock.is-unlocked
 .label-required:after { content:" *"; }
 
 /* BEGIN GW LIBRARIES CUSTOMIZATIONS */
+
+/* header mods */
+.navbar {
+  background-image: none;
+  background-color: #005581;
+}
+
 /* removing above-the-fold blocks */
 .banner {display:none;}
 .jumbotron {display:none;}
