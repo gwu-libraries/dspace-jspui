@@ -175,8 +175,12 @@ if (submissions != null && submissions.count() > 0)
 <%
 }
 %>
-<div class="col-md-12">
+<div class="col-md-4">
     <%= sideNews %>
+</div>
+<div class="col-md-12">
+    <div class="branding-image">
+    </div>
 </div>
 </div>
 <div class="container row">
