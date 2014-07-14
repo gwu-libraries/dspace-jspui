@@ -72,6 +72,14 @@ input.ds-authority-lock.is-unlocked
   background-image: none;
   background-color: #005581;
 }
+.navbar-brand {display:none;}
+.navbar-nav {margin-left:-22px;}
+header .navbar-nav li a {color:#fff !important;}
+header .navbar-nav .dropdown-menu a {color:#333 !important;}
+@media screen and (max-width:767px){
+  header .navbar-nav .dropdown-menu a {color:#fff !important;}
+  .navbar-nav {margin-left: 6px;}
+}
 
 /* removing above-the-fold blocks */
 .banner {display:none;}
@@ -125,6 +133,3 @@ div.panel.panel-primary {height:180px; background-color:#428bca;}*/
 .branding-image h2 {margin-top:0; padding-top:0;}
 .branding-image p, h2 {color:#fff; letter-spacing:inherit;}
 
-/* mods to existing header */
-.navbar-brand {display:none;}
-.navbar-nav {margin-left:-22px;}
