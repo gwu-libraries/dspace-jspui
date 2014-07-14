@@ -82,7 +82,7 @@ form.well {display:none;}
 .metadataFieldLabel {font-size:14px;}
 
 /* removing "please use this identifier" block */
-.container .well {display:none;}
+.cite-block {display:none;}
 
 /* general no show class */
 .noshow {display:none;}
