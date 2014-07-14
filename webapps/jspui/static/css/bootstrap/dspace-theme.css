@@ -110,6 +110,10 @@ form.well {display:none;}
 
 .hide-admin-headerXX {display:none;}
 
+/* replace recent submissions block with image */
+#recent-submissions-carousel {display:none;}
+.panel .panel-primary {height:180px; background-color:#428bca;}
+
 /* mods to existing header */
 .navbar-brand {display:none;}
 .navbar-nav {margin-left:-22px;}
