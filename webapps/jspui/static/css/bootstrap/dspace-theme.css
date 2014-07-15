@@ -71,7 +71,7 @@ input.ds-authority-lock.is-unlocked
 .navbar {
   background-image: none;
   background-color: #005581;
-  border-bottom: solid 4px #b2a38f;
+  border-bottom: 4px solid #b2a38f;
 }
 .navbar-brand {display:none;}
 .navbar-nav {margin-left:-22px;}
@@ -130,7 +130,7 @@ form.well {display:none;}
 /* replace recent submissions block with image */
 /*#recent-submissions-carousel {display:none;}
 div.panel.panel-primary {height:180px; background-color:#428bca;}*/
-.branding-image-container {background-color:#428bca;}
+.branding-image-container {background-color: #005581; /*#428bca;*/}
 .branding-image {padding:1em;}
 .branding-image h2 {margin-top:0; padding-top:0;}
 .branding-image p, h2 {color:#fff; letter-spacing:inherit;}
