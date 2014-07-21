@@ -127,15 +127,6 @@
 </div>
 
 <div class="row">
-
-	<%-- changing facet cols to 6 from 4 after removing Date Uploaded col --%>
-    <%
-    	int discovery_panel_cols = 12;
-    	int discovery_facet_cols = 6;
-    %>
-	<%@ include file="discovery/static-sidebar-facet.jsp" %>
-</div>
-<div class="row">
 <%
 	boolean showLogos = ConfigurationManager.getBooleanProperty("jspui.community-home.logos", true);
 	if (subcommunities.length != 0)
@@ -197,7 +188,7 @@
     if (collections.length != 0)
     {
 %>
-	<div class="col-md-6">
+	<div class="col-md-12">
 
         <%-- <h2>Collections in this community</h2> --%>
 		<h3><fmt:message key="jsp.community-home.heading2"/></h3>
@@ -250,6 +241,17 @@
     }
 %>
 </div>
+
+<div class="row">
+
+	<%-- changing facet cols to 6 from 4 after removing Date Uploaded col --%>
+    <%
+    	int discovery_panel_cols = 12;
+    	int discovery_facet_cols = 6;
+    %>
+	<%@ include file="discovery/static-sidebar-facet.jsp" %>
+</div>
+
     <% if(editor_button || add_button)  // edit button(s)
     { %>
     <dspace:sidebar>
