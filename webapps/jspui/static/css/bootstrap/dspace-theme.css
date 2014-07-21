@@ -130,8 +130,8 @@ form.well {display:none;}
 /* replace recent submissions block with image */
 /*#recent-submissions-carousel {display:none;}
 div.panel.panel-primary {height:180px; background-color:#428bca;}*/
-.branding-image-container {background-image:url('http://upload.wikimedia.org/wikipedia/commons/e/ee/AWI-core-archive_hg.jpg');background-color: #005581; /*#428bca;*/}
+.branding-image-background {border-radius:1em; height:130px; opacity:.30; background-image:url('http://upload.wikimedia.org/wikipedia/commons/e/ee/AWI-core-archive_hg.jpg');}
+.branding-image-container {position:absolute; top:0;}
 .branding-image {padding:1em;}
 .branding-image h2 {margin-top:0; padding-top:0;}
-.branding-image p, h2 {color:#fff; letter-spacing:inherit; text-shadow:1px 1px 1px #000;}
-
+.branding-image p, h2 {color:#222; letter-spacing:inherit; font-weight:700; text-shadow:0px 0px 10px #fff;}
